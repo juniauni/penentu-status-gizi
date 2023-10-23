@@ -1,0 +1,119 @@
+# USER
+# create a user
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Junia",
+    "email": "junia@gmail.com",
+    "password": "12345" ,
+    "confPassword": "12345" ,
+    "role": "admin"
+}
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Nysa",
+    "email": "nysa@gmail.com",
+    "password": "12345" ,
+    "confPassword": "12345" ,
+    "role": "user"
+}
+
+###
+# get all Users
+GET http://localhost:5000/users
+
+###
+# get single Users
+GET http://localhost:5000/users/0c69b2bf-c77c-4b7b-8ad0-1db2841ffe72
+
+###
+# update a user
+PATCH http://localhost:5000/users/0c69b2bf-c77c-4b7b-8ad0-1db2841ffe72
+Content-Type: application/json
+
+{
+    "name": "Junia",
+    "email": "junia@gmail.com",
+    "password": "" ,
+    "confPassword": "" ,
+    "role": "admin"
+}
+
+###
+# delete a user
+DELETE http://localhost:5000/users/5c73bf42-fb0e-4570-9588-fc4303e67379
+
+###
+# login a user
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "junia@gmail.com",
+    "password": "12345"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "nysa@gmail.com",
+    "password": "12345"
+}
+
+###
+# get a me
+GET http://localhost:5000/me
+
+###
+# logout a user
+DELETE http://localhost:5000/logout
+
+
+# test
+### create a test
+POST http://localhost:5000/tests
+Content-Type: application/json
+
+{
+    "k":9,
+    "name": "Amira",
+    "age": 17,
+    "weight": 13.1,
+    "height": 15
+}
+
+###
+# get all tests
+GET http://localhost:5000/tests
+
+###
+# get single tests
+GET http://localhost:5000/tests/4c3f274a-c892-4ed4-b579-315009d43769
+
+### update a test
+PATCH http://localhost:5000/tests/85df3fa8-04c1-4daf-b01d-ceddee6e580b
+Content-Type: application/json
+
+{
+    "k":1,
+    "name": "Ami",
+    "age": 54,
+    "weight": 23,
+    "height": 104
+}
+
+
+### delete a test
+DELETE http://localhost:5000/tests/7f176af3-8c90-404e-9905-d4724af6c4e2
+
+### 
+DELETE http://localhost:5000/tests/1a40e6f1-432d-4049-89f8-41458c3ebf35
+
+

@@ -1,0 +1,125 @@
+/* PaginationStyles.css */
+
+.welcome {
+  width: 50%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 25px;
+  background-color: white;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info span {
+  text-align: right;
+}
+
+.test {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px 10px 10px 0px;
+}
+
+.user {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px 10px 10px 0px;
+}
+
+.add-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  width: 100%; /* Ensure the button takes up the full width available */
+}
+.filter {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  width: 100%; /* Ensure the button takes up the full width available */
+  align-items: center;
+}
+
+.toddler {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin:10px 10px 10px 0px
+}
+
+.calculation {
+  position: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin:10px 10px 10px 0px
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.pagination-button {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  margin: 0 5px;
+  background-color: transparent;
+}
+
+.pagination-button.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination-button:disabled {
+  color: gray;
+  cursor: not-allowed;
+}
+
+.pagination-button:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination-button:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
